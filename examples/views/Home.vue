@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <ValidateData :cust-name='custName' :phone="phone"/>
-    <demo-component></demo-component>
   </div>
 </template>
 

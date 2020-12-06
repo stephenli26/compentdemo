@@ -4,13 +4,14 @@
     <div class="input name-content">
       <span class="title name-title"> 姓名：</span>
       <input class="value name" type="text" ref="name" :value="custName" @change="inputName()">
-      <label class="error" v-show="showNameTips">只能填写中文字符</label>
     </div>
+    <label class="error" v-show="showNameTips">只能填写中文字符</label>
     <div class="input phone-content">
       <span class="title"> 手机号：</span>
       <input class="value phone" type="text" ref="phone" :value="phone" @change="inputPhone()">
-      <label  class="error" v-show="showPhoneTips">手机格式不正确</label>
      </div>
+           <label  class="error" v-show="showPhoneTips">手机格式不正确</label>
+
   </div>
   
 </template>
