@@ -10,14 +10,14 @@
       <span class="title"> 手机号：</span>
       <input class="value phone" type="text" ref="phone" :value="phone" @change="inputPhone()">
      </div>
-           <label  class="error" v-show="showPhoneTips">手机格式不正确</label>
+    <label  class="error" v-show="showPhoneTips">手机格式不正确</label>
+    <button @click="openPage()">进入下一页</button>
 
   </div>
   
 </template>
 
 <script>
-
 export default {
   data() {
       return { 
@@ -65,6 +65,9 @@ export default {
           } else {
             this.showNameTips = false
           }
+      },
+      openPage: function() {
+        this.$router.push({path: require('./setting').urlParam[0].url})
       }
   }
 }

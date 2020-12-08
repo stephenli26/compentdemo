@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <ValidateData :cust-name='custName' :phone="phone"/>
+    <!-- <ValidateData :cust-name='custName' :phone="phone"> </ValidateData> -->
   </div>
 </template>
 
 <script>
+// // 导入组件库
 // @ is an alias to /src
-import ValidateData from '../components/ValidateData.vue'
+// import ValidateData from '../../packages/validate-data-demo/src/ValidateDataDemo.vue'
 // import { computed,toRefs} from 'vue';
 export default {
   data(){
@@ -17,9 +18,6 @@ export default {
     } 
   },
   name: 'Home',
-  components: {
-    ValidateData
-  },
   computed: {
       // 计算属性的 getter
       reversedMessage: function () {

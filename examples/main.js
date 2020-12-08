@@ -6,13 +6,13 @@ import store from './store'
 // Vue.use(Mint);
 //  import 'mint-ui/lib/style.css'; 
 
-// // 导入组件库
-// import ValidateData from '../../packages//srcindex'
-// // 注册组件库
-// Vue.use(ValidateData)
+
 
 Vue.config.productionTip = false
-
+// // 导入组件库
+import ValidateData from 'validatedemo1'
+// // 注册组件库
+Vue.use(ValidateData)
 // 源代码入口文件
 new Vue({
   router,
